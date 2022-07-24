@@ -14,12 +14,17 @@ html{
 :root{
     --cor1: #FA91FF;
     --cor2: #7DE5FB;
-    --cor3: #719EE3;
-    --cor4: #8E89FA;
+    --cor3: #5f86c0;
+    --cor4: #7570cc;
     --cor5: #AB71E3;
 }
+
 body{
-    background-color: rgb(205, 201, 209);
+    background-color: rgba(205, 201, 209, 0.795);
+}
+
+h1, h2 {
+    font-weight: bold;
 }
 
 header{
@@ -38,6 +43,7 @@ nav{
     background-color: var(--cor4);
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
 }
 
 nav ul {
@@ -55,6 +61,7 @@ a{
     font-size: 1.3rem;
     color: white;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 main{
@@ -85,7 +92,7 @@ img{
 }
 
 .ipsum{
-    background-color: rgb(205, 201, 209);
+    background-color: rgba(186, 173, 199, 0.699);
     padding: 2rem;
     border-radius: 50px 0px 50px 50px;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -111,7 +118,12 @@ section{
 
 .listafinal{
     color: var(--cor4);
-    margin-left: 30px;
+    margin-left: 30px;  
+}
+
+.final{
+    max-width: 200px;
+    margin: auto;
 }
 
 .link2{
@@ -119,20 +131,44 @@ section{
     font-weight: bold;
 }
 
-.final{
-    text-align: center;
+.voltar1{
+    background-color: rgba(186, 173, 199, 0.699);
+    background-color: rgb(205, 201, 209);
+    padding: 0.5rem;
     max-width: 100px;
-    margin: auto;
-    margin-top: 20px;
     border-radius: 50px;
-    font-weight: bolder;
-}
-
-.paragrafofinal{
-    display: block;
-    font-weight: bold;
-    background-color: rgb(205, 201, 209); 
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .voltar{
     color: var(--cor4);
+}
+
+footer{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    padding: 4rem;
+    text-align: center;
+    color: white;
+    
+}
+
+#instagram{
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+.site{
+    margin-bottom: -20px;
+}
+
+.hover:hover{
+    border: var(--cor1) solid 0px;
+    border-radius: 10px 0px 10px 0px;
+    background-color: var(--cor1);
+    padding: 0.3rem;
+}
+
+.voltar:hover{
+    font-size: 26px;
 }

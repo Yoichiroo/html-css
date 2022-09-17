@@ -1,8 +1,55 @@
+@charset "UTF-8";
+
 *{
     padding: 0px;
     margin: 0px;
 }  
 
-body{
+html, body{
+    min-heigth: 100vh;
+    background-color: darkgrey;
+}
+
+header{
     background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover{
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+.normal{
+    background-color: white;
+    color: black;
+}
+
+.imagem{
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }

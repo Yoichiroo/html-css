@@ -1,66 +1,80 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
 
-*{
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Poppins', sans-serif;
+    --fonte3: 'Kalam', cursive;
+}
+
+* {
     padding: 0px;
     margin: 0px;
 }  
 
-html, body{
+html, body {
     min-heigth: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte1);
 }
 
-header{
+header {
     background-color: black;
     color: white;
     text-align: center;
 }
 
-header h1{
+header h1 {
     padding-top: 50px;
     font-variant: small-caps;
-
+    font-family: var(--fonte2);
+    font-size: 5vw;
 }
 
 header p {
     padding-bottom: 50px;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-family: var(--fonte3);
 }
 
-header a:hover, footer a:hover{
+header a:hover, footer a:hover {
     transition: 0.5s;
     text-decoration: underline;
 }
 
-section{
+section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 
-.normal{
+.normal {
     background-color: white;
     color: black;
 }
 
-.imagem{
+.imagem {
     background-color: rgba(0, 0, 0, 0.514);
     color: white;
 }
 
 .imagem p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.438);
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     text-align: center;

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&family=Stint+Ultra+Condensed&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    background-image: url(elmore-noite.webp);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto; 
+    border-radius: 20px;
+    text-indent: 20px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+main h1 {
+    text-align: center;
+}
+
+#gumball {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 200px;
+    border-radius: 100% ;
+}
+
+@media screen and (max-width: 500px) {
+    #gumball {
+        margin: auto;
+        padding: 10px;
+        width: 100px;
+    }
+    main {
+        max-width: 430px;
+    }
+
+}
+
+@media screen and (min-width: 501px) {
+
+
+    #gumball {
+        margin: auto;
+        padding: 20px;
+        width: 150px;
+        float: right;
+    }
+
+    main {
+        max-width: 650px;
+    }
+
+    main h1 {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    #gumball {
+        margin: auto;
+        padding: 30px;
+        width: 200px;
+        float: left;
+    }
+
+    main {
+        min-width: 800px;
+    }
+
+    main h1 {
+        padding: 10px;
+    }
+}
+

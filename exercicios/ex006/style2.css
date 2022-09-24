@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap');
+@charset "UTF-8";
+
+* {
+    font-family: 'Inter Tight';
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 8px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.container {
+    overflow-x: auto;
+}

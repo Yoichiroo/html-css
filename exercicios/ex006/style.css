@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap');
+@charset "UTF-8";
+
+* {
+    font-family: 'Inter Tight';
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 8px;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}

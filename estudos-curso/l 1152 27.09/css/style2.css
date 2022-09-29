@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap');
+
+* {
+    font-family: 'Inter Tight';
+}
+
+:root {
+    --cor0: #2ED981;
+    --cor1: #30E354;
+    --cor2: #44CC35;
+    --cor3: #80E330;
+    --cor4: #B6D92E;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border: 15px solid var(--cor4);
+    line-height: 1.5em;
+}
+
+main h1 {
+    color: var(--cor4);
+    
+}
+
+main h2 {
+    font-size: 1.2em;
+}
+
+main h2 a {
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+main p {
+   
+    font-size: 1.5em;
+    line-height: 1.2em;
+}

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&family=Oswald:wght@300;400;500&display=swap');
+
+body {
+    background-image: linear-gradient(to right,rgb(87, 169, 250),rgb(10, 67, 124));
+    font-family: 'Comfortaa';
+}
+
+main {
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.273);
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+p#lista {
+    font-size: 1.5em;
+}
+
+button {
+    background-color: #57a9fa;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    max-width: 800px;
+    max-height: 800px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.273);
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: rgb(67, 128, 189);
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: linear-gradient(to right,#c157fa, rgb(95, 10, 124));
+    }
+
+    button {
+        background-color: #c157fa;
+    }
+
+    button:hover {
+        background-color: rgb(95, 10, 124);
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #lista {
+        width: 400px;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 801px) {  
+    main {
+        flex-direction: row;
+    }
+
+    #lista {
+        width: 400px;
+        text-align: center;
+    }
+}

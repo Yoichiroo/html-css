@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    font-family: "Poppins";
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(62, 107, 255);
+    padding: 10px;
+    min-height: 700px;
+    justify-content: center;
+    align-content: center;
+}
+
+section{
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}

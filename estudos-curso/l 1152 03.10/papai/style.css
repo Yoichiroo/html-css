@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta&display=swap');
+
+
+* {
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    background-image: url(../imagens/wallpaper-netflix.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo {
+    max-width: 450px;
+    text-shadow: 0px 0px 25px rgb(0, 0, 0);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.568);
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    font-family: 'Mukta', display;
+    color: white;
+    padding-top: 20px;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+h1, h3 {
+    color: #e30915;
+    font-family: 'Bebas Neue', display;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+.logo img {
+    width: 350px;
+}
+
+.papai {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.filmes {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 45px;
+}
+
+.filmes img {
+    width: 100%;
+}
+
+h3 {
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+@media screen and (max-width: 800px){
+    body {
+        background-image: linear-gradient(to bottom, black, rgba(124, 124, 124, 0.616));
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .titulo {
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+    
+    .filmes {
+        width: 100vw;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.301);
+    }
+
+    .filmes img {
+        width: 100%;
+    }
+
+    
+
+}

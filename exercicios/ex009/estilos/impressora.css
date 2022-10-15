@@ -19,3 +19,7 @@ menu {
 article::after {
     content: 'Esse artigo foi impresso através do repositório GitHub de Yoichiroo.';
 }
+
+article {
+    width: 100%;
+}

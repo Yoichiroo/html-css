@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* TODAS AS DEMAIS MÍDIAS */
+
+/* TYPICAL DEVICE BREAKPOINTS {
+    -PEQUENAS TELAS 600px-
+    Celular: de 600px até 768px;
+    Tablet: de 769px até 992px;
+    Desktop: de 993px até 1200px;
+
+    -GRANDES TELAS +1200px-
+*/
+
+@media print {
+    /* IMPRESSORA */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    main::after {
+        text-decoration: overline;
+        content: 'Esse impressão foi feita com recursos de pobre.';
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { 
+    /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone { display: none; }
+    #tablet { display: block; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+    }
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: block; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 1201px) {
+    /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
+}

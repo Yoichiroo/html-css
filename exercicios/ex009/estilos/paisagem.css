@@ -1,2 +1,7 @@
 @charset "UTF-8";
 /* MODO PAISAGEM (LANDSCAPE) */
+
+body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}

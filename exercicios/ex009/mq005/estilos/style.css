@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+}
+
+html, body {
+    background-color: lightgray;
+}
+
+header {
+    background-color: rgb(156, 156, 156);
+}
+
+header h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+i#burguer {
+    background-color: rgb(44, 44, 44);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
+}
+
+menu li {
+    list-style-type: none;
+}
+
+menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+    border-top: 1px solid gray;
+}
+
+menu ul li a:hover {
+    background-color: rgb(110, 110, 110);
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+main article h2{
+    padding-bottom: 20px;
+}
+
+main article p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 30px;
+}

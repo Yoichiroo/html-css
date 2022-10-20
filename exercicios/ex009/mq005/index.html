@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <i id="burguer" class="material-icons" onclick="clickmenu()">menu</i>
+        <menu id="items">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quas consequuntur quam eaque, unde deserunt impedit ullam, ipsa quibusdam assumenda, debitis corporis animi nostrum. Temporibus ducimus repellendus eum accusamus fugiat. Hic at expedita voluptatem nam aliquid eos iste quaerat corrupti sit rem fuga tenetur veniam perferendis laudantium, soluta, laboriosam omnis praesentium qui quo adipisci cumque optio quasi? Velit, ullam recusandae. Iste eos iusto fuga qui nostrum inventore mollitia optio repellendus ducimus aspernatur, labore commodi quos facilis at est minima perspiciatis corrupti quod laudantium dicta sequi repellat tenetur velit. Voluptatibus vitae delectus iure fugit eaque rem mollitia optio eveniet temporibus cumque.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quas consequuntur quam eaque, unde deserunt impedit ullam, ipsa quibusdam assumenda, debitis corporis animi nostrum. Temporibus ducimus repellendus eum accusamus fugiat. Hic at expedita voluptatem nam aliquid eos iste quaerat corrupti sit rem fuga tenetur veniam perferendis laudantium, soluta, laboriosam omnis praesentium qui quo adipisci cumque optio quasi? Velit, ullam recusandae. Iste eos iusto fuga qui nostrum inventore mollitia optio repellendus ducimus aspernatur, labore commodi quos facilis at est minima perspiciatis corrupti quod laudantium dicta sequi repellat tenetur velit. Voluptatibus vitae delectus iure fugit eaque rem mollitia optio eveniet temporibus cumque.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quas consequuntur quam eaque, unde deserunt impedit ullam, ipsa quibusdam assumenda, debitis corporis animi nostrum. Temporibus ducimus repellendus eum accusamus fugiat. Hic at expedita voluptatem nam aliquid eos iste quaerat corrupti sit rem fuga tenetur veniam perferendis laudantium, soluta, laboriosam omnis praesentium qui quo adipisci cumque optio quasi? Velit, ullam recusandae. Iste eos iusto fuga qui nostrum inventore mollitia optio repellendus ducimus aspernatur, labore commodi quos facilis at est minima perspiciatis corrupti quod laudantium dicta sequi repellat tenetur velit. Voluptatibus vitae delectus iure fugit eaque rem mollitia optio eveniet temporibus cumque.</p>
+        </article>
+    </main>
+
+    <script>
+        function clickmenu() {
+            if (items.style.display == 'block') {
+                items.style.display = 'none'
+            } else {
+                items.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

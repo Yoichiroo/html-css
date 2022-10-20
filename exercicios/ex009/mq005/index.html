@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu site</h1>
         <i id="burguer" class="material-icons" onclick="clickmenu()">menu</i>
@@ -40,6 +41,14 @@
                 items.style.display = 'none'
             } else {
                 items.style.display = 'block'
+            }
+        }
+
+        function mudoutamanho() {
+            if (window.innerWidth >= 768) {
+                items.style.display = 'block'
+            } else {
+                items.style.display = 'none'
             }
         }
     </script>

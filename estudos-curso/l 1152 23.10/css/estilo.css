@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: black;
+    background-image: linear-gradient(to bottom, rgb(9, 39, 105), black);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header.titulo {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: #daac42;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.219);
+    align-items: center;
+}
+
+header p {
+    color: white;
+    text-align: center;
+}
+
+.titulo-img {
+    margin: auto;
+    width: 200px;
+}
+
+.titulo-img img{
+    width: 200px;
+}
+
+header h1 {
+    font-family: 'Inter Tight';
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.336);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 15px;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+main h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #daac42;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
+}
+
+div.campeao {
+    width: 400px;
+    color: black;
+    background-color: white;
+    margin: 15px 5px 5px 5px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.233);
+}
+
+div.campeao img {
+    width: 100%;
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    /* tablet */
+    body {
+        background-image: url(../img/lol-wallpaper.jpg);
+        background-position: center center;
+    }
+
+    header section.titulo-principal {
+        padding: 20px;
+        width: 500px;
+        text-align: justify;
+    }
+
+    header p {
+        margin: 5px 5px 5px 0px;
+        text-align: justify;
+    }
+
+    header section.titulo-img img {
+        width: 150px;
+    }
+
+    div.campeao {
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        width: 240px;
+        height: 300px;
+    }
+
+    div.campeao::-webkit-scrollbar { 
+        display: none;
+    }
+}
+
+@media screen and (min-width:993px) {
+    /* desktop */
+
+    body {
+        background-image: url(../img/lol-wallpaper.jpg);
+        background-position: center center;
+    }
+
+    header {
+        box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.329);
+    }
+    header section.titulo-principal {
+        width: 600px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    header h1 {
+        text-align: left;
+    }
+    
+    header section.titulo-principal p {
+        text-align: justify;
+    }
+
+    div.campeao {
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width:1201px) {
+
+    header p {
+        width: 780px;
+    }
+
+    div.campeao {
+        width: 350px;
+    }
+}

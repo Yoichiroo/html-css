@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --cor0: white;
+    --cor1: black;
+    --cor2: #3C1975;
+    --cor3: #AC7EF7;
+    --fonte1: "Poppins";
+}
+
+header {
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px;
+}
+
+header figure img {
+    margin-left: 20px;
+    width: 40px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #e6d6ff;
+    position: relative;
+}
+
+form.mainForm {
+    width: 45vw;
+    height: 40vh;
+    font-family: var(--fonte1);
+    background-color: var(--cor3);
+    color: var(--cor0);
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+form.mainForm h1 {
+    padding-top: 1em;
+}
+
+form.mainForm div.mainFormDiv {
+    padding-top: 20px;
+}
+
+form input[type="number"] {
+    width: 20%;
+    height: 20px;
+    padding-left: 2px;
+    border-radius: 5px;
+    border: 0.2px solid var(--cor1);
+}
+
+form input[type="submit"] {
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    background-color: var(--cor0);
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-family: var(--fonte1);
+    color: var(--cor3);
+    cursor: pointer;
+    transition: .2s;
+}
+
+form input[type="submit"]:hover {
+    width: 40%;
+    font-size: 0.9em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+}
+
+div {
+    font-weight: normal;
+    padding-top: 1.2em;
+    text-align: center;
+    cursor: default;
+}
+
+footer {
+    font-family: var(--fonte1);
+    text-align: center;
+    background-color: var(--cor2);
+    padding: 10px;
+    color: var(--cor0);
+}

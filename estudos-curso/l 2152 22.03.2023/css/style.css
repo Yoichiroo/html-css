@@ -81,7 +81,7 @@ figure.imgCenter {
 }
 
 figure.imgCenter img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 15px 0px;
 }
 

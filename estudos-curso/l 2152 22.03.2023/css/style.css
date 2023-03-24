@@ -28,7 +28,8 @@ header nav ul {
     list-style-type: none;
 }
 
-ul.menuBar {
+.menuBar {
+    /* Menu de ul */
     background-color: var(--cor04);
     text-align: center;
 }
@@ -76,11 +77,13 @@ section iframe {
     height: 90vh;
 }
 
-figure.imgCenter {
+.imgCenter {
+    /* Figure no HTML */
     text-align: center;
 }
 
-figure.imgCenter img {
+.imgCenter img {
+    /* Img dentro do figure no HTML */
     max-width: 100%;
     border-radius: 15px 0px;
 }

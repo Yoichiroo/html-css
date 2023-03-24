@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor01: #000;
+    --cor02: #fff;
+    --cor03: #9241e9;
+    --cor04: #391363;
+    --cor05: #d0bce7;
+    --cor06: #9a999c;
+
+    --fonte01: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte02: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    font-weight: bold;
+    font-family: var(--fonte01);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+ul.menuBar {
+    background-color: var(--cor04);
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: -5px;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: var(--cor02);
+}
+
+ul li a:hover {
+    background-color: var(--cor03);
+}
+
+body {
+    font-family: var(--fonte01);
+    font-size: 1em;
+    background-color: var(--cor05);
+}
+
+section {
+    max-width: 1000px;
+    height: 100vh;
+    padding: 1em 2em;
+    background-color: var(--cor02);
+    font-family: var(--fonte02);
+    font-size: 1.2em;
+    margin: auto;
+}
+
+section p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+section iframe {
+    border: none;
+    width: 100%;
+    height: 90vh;
+}
+
+figure.imgCenter {
+    text-align: center;
+}
+
+figure.imgCenter img {
+    width: 100%;
+    border-radius: 15px 0px;
+}
+
+footer {
+    width: 100%;
+    height: 5vh;
+    padding-top: 0.5em;
+    background-color: var(--cor04);
+    color: var(--cor02);
+    text-align: center;
+}

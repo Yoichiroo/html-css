@@ -77,6 +77,22 @@ section iframe {
     height: 90vh;
 }
 
+.botaoETEOT {
+    /* Botão dentro da section no HTML */
+    background-color: var(--cor03);
+    cursor: pointer;
+    width: 100px;
+    height: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: var(--cor02);
+}
+
+.divProdutos {
+    /* Div contendo as figures dos produtos no HTML */
+    
+}
+
 .imgCenter {
     /* Figure no HTML */
     text-align: center;

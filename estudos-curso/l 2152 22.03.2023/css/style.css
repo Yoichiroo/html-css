@@ -90,7 +90,20 @@ section iframe {
 
 .divProdutos {
     /* Div contendo as figures dos produtos no HTML */
-    
+    text-align: center;
+    margin: 0.5em;
+}
+
+.imgProdutos {
+    /* Figure contendo as imagens dos produtos no HTML */
+    display: inline;
+    margin: 0em 0.5em;
+}
+
+.imgProdutos img {
+    /* Imagens dentro das figures no HTML */
+    max-width: 45%;
+    border-radius: 15px 0px;
 }
 
 .imgCenter {

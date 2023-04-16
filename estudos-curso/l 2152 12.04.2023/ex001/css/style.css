@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.formatacaoConteudo {
+    background-color: gray;
+    overflow: hidden;
+}
+
+.formatacaoPadrao {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.formatacaoPrimeiroDiv {
+    background-color: purple;
+    float: left;
+}
+
+.formatacaoSegundoDiv {
+    background-color: green;
+    float: left;
+}
+
+.formatacaoTexto {
+    clear: right;
+}

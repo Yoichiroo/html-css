@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Orçamento para festa</title>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <main>
+      <form action="#" method="get" name="formFesta">
+         <h1>Orçamento para festa</h1>
+         <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome...">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" maxlength="13" placeholder="Digite seu telefone...">
+         </div>
+         <div>
+            <label for="email">E-mail</label> <br>
+            <input type="email" name="email" id="email" placeholder="Digite seu email...">
+         </div>
+         <div>
+            <label for="dataFesta">Data da Festa</label>
+            <input type="date" name="dataFesta" id="dataFesta">
+            <label for="temaFesta">Tema da Festa</label>
+            <select name="temaFesta" id="temaFesta" onchange="trocarTema()">
+               <option value="selecione">Selecione...</option>
+               <option value="flamengo">Flamengo</option>
+               <option value="princesaSofia">Princesa Sofia</option>
+               <option value="CoD">Call of Duty</option>
+               <option value="LoL">League of Legends</option>
+               <option value="FF">Free Fire</option>
+            </select>
+            <div>
+               <p class="horario">Horário da festa</p>
+               <input type="radio" name="horario" value ="manha" id="manha" onchange="calc()">
+               <label for="manha">Manhã</label>
+               <input type="radio" name="horario" value ="tarde" id="tarde" onchange="calc()">
+               <label for="tarde">Tarde</label>
+               <input type="radio" name="horario" value ="noite" id="noite" onchange="calc()">
+               <label for="noite">Noite</label>
+            </div>
+         </div>
+            <div class="opcional">
+               <p>Opcionais</p>
+               <ul>
+                  <li>
+                     <input type="checkbox" name="mesaGuloseima" id="mesaGuloseima">
+                     <label for="mesaGuloseima">Mesa de Guloseimas</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="personagens" id="personagens">
+                     <label for="personagens">Personagens</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="atracoes" id="atracoes">
+                     <label for="atracoes">Atrações</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="maquiagemInfantil" id="maquiagemInfantil">
+                     <label for="maquiagemInfantil">Maquiagem infantil</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="brindes" id="brindes">
+                     <label for="brindes">Brindes</label>
+                  </li>
+               </ul>
+            </div>
+         </form>
+         <section>
+            <output id="totalOrcamento">00</output>
+            <div>
+               <input type="reset" class="limpar" value="Limpar"></input>
+               <input type="submit" class="enviar" value="Enviar">
+            </div>
+         </section>
+   </main>
+   <script src="js/script.js"></script>
+</body>
+</html>

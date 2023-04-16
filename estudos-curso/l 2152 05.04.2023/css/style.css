@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+   padding: 0.2em;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: var(--font01);
+}
+
+:root {
+   --cor1: #fff;
+   --cor2: #000;
+   --cor3: #2e8cf8;
+   --cor4: #dfdfdf;
+   --cor5: #3123FC;
+   --corLimpar: red;
+   --corEnviar: green;
+   --font01: "Poppins";
+}
+
+html {
+   padding: 0;
+}
+
+body {
+   width: 100vw;
+   height: 100vh;
+   padding: 0.5em;
+   background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: top center;
+}
+
+main {
+   width: 50vw;
+   padding: 0.5em;
+   margin: auto;
+   background-color: var(--cor1);   
+   border-radius: 20px;
+   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.267);
+}
+
+form {
+   font-size: 1em;
+   width: 100%;
+   padding: 0.5em;
+}
+
+form input {
+   margin: 0.5em 0;
+}
+
+form input[type="radio"] {
+   height: 1em;
+}
+
+form .horario {
+   font-weight: bold;
+}
+
+form input[type="text"], input[type="email"], input[type="tel"] {
+   display: inline-block;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding-left: 0.5em;
+   height: 2em;
+}
+
+form input[type="email"] {
+   width: 90%;
+}
+
+form ul li {
+   list-style: none;
+}
+
+form .opcional {
+   margin: 0.2em 0;
+   font-size: 1.2em;
+   padding: 0.5em;
+   background-color: var(--cor4);
+   border-radius: 20px;
+}
+
+form .opcional p {
+   font-weight: bold;
+}
+
+button {
+   width: 100px;
+   height: 30px;
+   border: none;
+   border-radius: 5px;
+   background-color: var(--cor2);
+   color: var(--cor1);
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.24);
+}
+
+input[type="submit"], input[type="reset"] {
+   width: 100px;
+   height: 30px;
+   border: none;
+   border-radius: 5px;
+   color: var(--cor1);
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.24);
+   margin: 0.5em 0;
+}
+ 
+section {
+   margin: 0.5em 0.5em;
+}
+
+section div {
+   margin-left: 1em;
+}
+
+section output {
+   font-size: 2em;
+   margin: 0em;
+   padding: 0.5em;
+   font-weight: bold;
+}
+
+section output::before {
+   content: "R$";
+}
+
+section output::after {
+   content: ",00";
+}
+
+.limpar {
+   background-color: var(--corLimpar);
+}
+
+.enviar {
+   background-color: var(--corEnviar);
+}

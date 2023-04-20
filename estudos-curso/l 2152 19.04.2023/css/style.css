@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+    --cor01: #000;
+    --cor02: #fff;
+    --cor03: #c66500;
+    --cor04: #362318;
+
+    --fonte01: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    --fonte02: 'Kanit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte01);
+}
+
+body {
+    background-color: var(--cor04);
+}
+
+header, footer {
+    font-family: var(--fonte02);
+    background-color: var(--cor03);
+    color: var(--cor02);
+    text-align: center;
+}
+
+article {
+    background-color: var(--cor02);
+    padding: 1em;
+    max-width: 900px;
+    margin: auto;
+}
+
+p {
+    line-height: 1.5em;
+    padding: 1em 0em;
+}
+
+
+figure img {
+    max-width: 30vw;
+    padding: 1em;
+    float: right;
+    border-radius: 30px 0px;
+}
+
+.titulo_artigo, strong, .frase-artigo {
+    font-weight: bolder;
+    color: var(--cor03);
+    padding: 1em 0em;
+}
+
+.frase-artigo {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+ul {
+    margin-top: 0.5em;
+    margin-left: 1.5em;
+}
+
+ul li {
+    margin: 1em 0.5em;
+}
+
+.nome_aluno {
+    padding: 0.5em 0em;
+}

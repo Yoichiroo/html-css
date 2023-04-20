@@ -27,3 +27,13 @@ function trocarTema() {
     document.body.style.backgroundImage = "url(" + novoFundo + ")"
     console.log(temaFesta)
 }
+
+function opcionais(valor, selecionado) {
+    let total = document.getElementById("totalOrcamento").value
+    if (selecionado) {
+        total = Number(total) + Number(valor)
+    } else {
+        total = Number(total) - Number(valor)
+    }
+    document.getElementById("totalOrcamento").value = total
+}

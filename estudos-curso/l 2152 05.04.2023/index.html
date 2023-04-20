@@ -35,11 +35,11 @@
             </select>
             <div>
                <p class="horario">Horário da festa</p>
-               <input type="radio" name="horario" value ="manha" id="manha" onchange="calc()">
+               <input type="radio" name="horario" value="manha" id="manha" onchange="calc()">
                <label for="manha">Manhã</label>
-               <input type="radio" name="horario" value ="tarde" id="tarde" onchange="calc()">
+               <input type="radio" name="horario" value="tarde" id="tarde" onchange="calc()">
                <label for="tarde">Tarde</label>
-               <input type="radio" name="horario" value ="noite" id="noite" onchange="calc()">
+               <input type="radio" name="horario" value="noite" id="noite" onchange="calc()">
                <label for="noite">Noite</label>
             </div>
          </div>
@@ -47,23 +47,23 @@
                <p>Opcionais</p>
                <ul>
                   <li>
-                     <input type="checkbox" name="mesaGuloseima" id="mesaGuloseima">
+                     <input type="checkbox" name="mesaGuloseima" id="mesaGuloseima" onchange="opcionais(300, this.checked)">
                      <label for="mesaGuloseima">Mesa de Guloseimas</label>
                   </li>
                   <li>
-                     <input type="checkbox" name="personagens" id="personagens">
+                     <input type="checkbox" name="personagens" id="personagens" onchange="opcionais(450, this.checked)">
                      <label for="personagens">Personagens</label>
                   </li>
                   <li>
-                     <input type="checkbox" name="atracoes" id="atracoes">
+                     <input type="checkbox" name="atracoes" id="atracoes" onchange="opcionais(600, this.checked)">
                      <label for="atracoes">Atrações</label>
                   </li>
                   <li>
-                     <input type="checkbox" name="maquiagemInfantil" id="maquiagemInfantil">
+                     <input type="checkbox" name="maquiagemInfantil" id="maquiagemInfantil" onchange="opcionais(100, this.checked)">
                      <label for="maquiagemInfantil">Maquiagem infantil</label>
                   </li>
                   <li>
-                     <input type="checkbox" name="brindes" id="brindes">
+                     <input type="checkbox" name="brindes" id="brindes" onchange="opcionais(150, this.checked)">
                      <label for="brindes">Brindes</label>
                   </li>
                </ul>

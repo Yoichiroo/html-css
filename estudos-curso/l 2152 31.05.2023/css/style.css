@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Nunito:wght@400;500;700&display=swap');
+
+:root {
+    --cor01: #000;
+    --cor02: #fff;
+    --cor03: #a50ab6;
+    --cor04: #54055d;
+    --cor05: #afabaf;
+
+    --fonte01: "Mynerve", cursive;
+    --fonte02: "Nunito", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+header {
+    font-weight: normal;
+    background-color: var(--cor03);
+    color: var(--cor02);
+}
+
+header figure {
+    width: 30px;
+    margin: 0.5em 0.2em;
+    float: left;
+}
+
+header p {
+    font-size: 2em;
+}
+
+header figure img {
+    width: 100%;
+}
+
+.nome-empresa {
+    display: inline-block;
+    font-family: var(--fonte01);
+}
+
+nav {
+    display: inline-block;
+    font-size: 0.9em;
+    font-family: var(--fonte02);
+    float: right;
+}
+
+nav ul {
+    display: inline;
+}
+
+nav ul li {
+    margin: 0px 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li a {
+    color: var(--cor02);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: var(--cor04);
+}
+
+header, footer {
+    background-color: var(--cor03);
+    color: var(--cor02);
+    font-weight: bold;
+    height: 7vh;
+    padding: 0 0.8em;
+    line-height: 7vh;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor05));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    background-color: var(--cor02);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main figure {
+    width: 250px;
+    margin: 0 0.5em 0 0.5em;
+}
+
+main figure img {
+    width: 100%;
+    filter: grayscale(50%);
+    border-radius: 10px 0px;
+}
+
+main article {
+    text-align: center;
+    font-family: var(--fonte02);
+    padding: 0.5em;
+}
+
+main article p {
+    margin: 0 0.2em;
+    line-height: 1.5em;
+    font-weight: normal;   
+}
+
+.section-text {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    text-align: left;
+}
+
+.text-saiba-mais {
+    font-family: var(--fonte02);
+    color: var(--cor04);
+    font-weight: bold;
+}
+
+.section-servico {
+    display: inline-block;
+    text-align: center;
+    max-width: 420px;
+    margin: 0.5em;
+}
+
+.img-servico {
+    width: 100%;
+    margin: auto;
+    filter: drop-shadow(5px 5px 5px var(--cor03));
+}
+
+.button-servico, .button-form button {
+    width: 100px;
+    height: 30px;
+    margin: 1em 0em;
+    color: var(--cor02);
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 1px 5px 5px var(--cor05);
+    background-color: var(--cor03);
+}
+
+main form {
+    text-align: center;
+    width: 100%;
+}
+
+main form label {
+    color: var(--cor03);
+    font-weight: bold;
+}
+
+main form div {
+    width: 100%;
+    margin: 1em 0;
+}
+
+main form input {
+    width: 85%;
+    height: 30px;
+    padding-left: 0.5em;
+    border-radius: 5px;
+    border: 1px solid var(--cor05);
+}
+
+form textarea {
+    width: 90%;
+    padding: 1em;
+    border: 0.5px solid var(--cor05);
+    color: var(--cor05);
+}
+
+.button-form {
+    text-decoration: none;
+}
+
+.img-map {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+.img-map img {
+    width: 100%;
+    border-radius: 0;
+}
+
+.img-principal {
+    position: relative;
+    width: 100%;
+    margin: 0.5em 0;
+    height: 70vh;
+    background-image: linear-gradient(to bottom, transparent 0%, var(--cor03)), url('../img/ponto-turistico-1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-principal h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--cor02);
+    font-family: var(--fonte01);
+    position: absolute;
+    bottom: 1.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.esquerda, .direita {
+    margin-top: 0.2em;
+}
+
+.esquerda {
+    float: left;
+    margin-right: 1.5em;
+}
+
+.direita {
+    float: right;
+    margin-left: 1.5em;
+}
+
+footer {
+    font-family: var(--fonte02);
+    text-align: center;
+}
